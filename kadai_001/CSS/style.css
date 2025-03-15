@@ -1,0 +1,190 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+ margin: 0 0;
+ font-family: "Noto Sans Japanese", "Source Sans Pro", "Hiragino Kaku Gothic ProN";
+ font-size: 18px;
+ 
+}
+
+
+/*ヘッダー*/
+.header-menu {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 20px auto;
+}
+
+#nav-pc {
+ text-align: right;
+ color:#000000;
+
+}
+
+#nav-pc ul {
+  display: flex;
+  margin: 10px 0;
+  padding: 0;  
+
+}
+
+#nav-pc li {
+  padding: 0;
+  
+}
+
+
+#nav-pc a {
+margin: 20px;
+color: #000000;
+text-decoration: none;
+font-size: 34px;
+font-weight: bold;
+margin: 0;
+padding: 0;
+}
+
+#nav-pc ul {
+list-style: none;
+}
+
+.header-menu > a {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  color: #000000;
+  border: solid 1px #000000 ;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+#main-visual img {
+  width: 100%;
+  margin: auto;
+}
+
+
+#about > h2 {
+text-align: center;
+margin-top: 60px;
+font-size: 34px;
+}
+
+#about-main {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 980px;
+  
+}
+
+.cercle {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 30px 0 0;
+}
+
+.content {
+  margin: 0 0 0 50px;
+}
+
+.content > p {
+  text-align:left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+#works {
+margin: 100px auto 30px auto;
+}
+
+#works > h2 {
+  text-align: center;
+  font-size: 34px;
+}
+#works-photo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;
+  justify-content: center;
+  max-width: 980px;
+}
+
+.items {
+  margin: 10px 10px;
+  padding-bottom: 60px;
+  width: 25%;
+}
+
+img {
+  width: 100%;
+
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/*スマホ用スタイル*/
+@media screen and (max-width: 767px) {
+  
+  .header-menu > a {
+    font-size: 26px;
+  }
+
+  #nav-pc a {
+    margin: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #nav li {
+    margin: 0 10px;
+  }
+    
+
+
+  #about {
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+  }
+  #about-main {
+    flex-direction: column;    
+    width: 100%;
+
+  }
+
+ 
+  .cercle {
+    margin: 0 auto;
+  }
+  .content {
+    margin: 0 auto;
+  }
+
+  
+  #works-photo {
+    flex-direction: column;
+  }
+
+  .items {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  
+
+
+}
