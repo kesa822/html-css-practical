@@ -19,39 +19,7 @@ body {
   margin: 20px auto;
 }
 
-#nav-pc {
- text-align: right;
- color:#000000;
-
-}
-
-#nav-pc ul {
-  display: flex;
-  margin: 10px 0;
-  padding: 0;  
-
-}
-
-#nav-pc li {
-  padding: 0;
-  
-}
-
-
-#nav-pc a {
-margin: 20px;
-color: #000000;
-text-decoration: none;
-font-size: 34px;
-font-weight: bold;
-margin: 0;
-padding: 0;
-}
-
-#nav-pc ul {
-list-style: none;
-}
-
+/*my profile*/
 .header-menu > a {
   text-decoration: none;
   font-size: 34px;
@@ -62,10 +30,48 @@ list-style: none;
   margin: 0 10px;
 }
 
+
+#nav-pc {
+ text-align: right;
+ color:#000000;
+
+}
+
+#nav-pc ul {
+  display: flex;
+  margin: 10px 0;
+  padding-left: 0;  
+  list-style: none;
+
+
+}
+
+#nav-pc li {
+margin: 0 10px;  
+}
+
+/*about works*/
+#nav-pc a {
+margin: 20px;
+color: #000000;
+text-decoration: none;
+font-size: 34px;
+font-weight: bold;
+margin: 0;
+padding: 0;
+}
+
+
+
 #main-visual img {
   width: 100%;
   margin: auto;
 }
+
+#about {
+  margin-bottom: 20px;
+}
+
 
 
 #about > h2 {
@@ -80,6 +86,7 @@ font-size: 34px;
   align-items: center;
   justify-content: center;
   max-width: 980px;
+
   
 }
 
@@ -90,6 +97,7 @@ font-size: 34px;
   margin: 0 30px 0 0;
 }
 
+/*Kazuki Asahinaの説明*/
 .content {
   margin: 0 0 0 50px;
 }
@@ -103,21 +111,22 @@ font-size: 34px;
 }
 
 #works {
-margin: 100px auto 30px auto;
+margin-top: 100px;
 }
 
 #works > h2 {
   text-align: center;
   font-size: 34px;
 }
-#works-photo {
+#works-main {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0 auto;
   justify-content: center;
   max-width: 980px;
+
 }
 
+/*風景画像と説明文のdiv*/
 .items {
   margin: 10px 10px;
   padding-bottom: 60px;
@@ -140,27 +149,24 @@ footer {
   
   .header-menu > a {
     font-size: 26px;
+    margin-left: 20px;
   }
 
+
+  
+    
   #nav-pc a {
-    margin: 20px;
     color: #000000;
     text-decoration: none;
     font-size: 20px;
   }
 
-  #nav li {
-    margin: 0 10px;
-  }
-    
+ 
 
 
-  #about {
-    margin-top: 20px;
-    padding: 0 20px 0 20px;
-  }
+  
   #about-main {
-    flex-direction: column;    
+    flex-direction: column;
     width: 100%;
 
   }
@@ -170,18 +176,24 @@ footer {
     margin: 0 auto;
   }
   .content {
-    margin: 0 auto;
+    margin: 10px 0;
   }
 
   
-  #works-photo {
+  #works-main {
     flex-direction: column;
+    width: 100%;
   }
 
   .items {
     width: 100%;
     text-align: center;
+    margin: 10px 0;
 
+  }
+
+  .content > p {
+    margin-left: 15px;
   }
 
   
